@@ -12,6 +12,15 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        L3 {
+            bindings = <&mo 3>;
+            key-positions = <38 43>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -21,17 +30,17 @@
 &kp TAB    &kp A  &kp S  &kp D  &kp F           &kp G            &kp H    &kp J    &kp K      &kp L      &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V           &kp B            &kp N    &kp M    &kp COMMA  &kp DOT    &kp FSLH  &kp LSHFT
                                                                                    &kp LSHFT  &kp SPACE
-                         &mo 1  &kp LEFT_SHIFT  &kp BACKSPACE    &kp RET  &kp TAB  &mo 2
+                         &to 1  &kp LEFT_SHIFT  &kp BACKSPACE    &kp RET  &kp TAB  &mo 2
             >;
         };
 
         layer_1 {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mkp LCLK  &mkp RCLK  &kp N7       &kp N8  &kp N9  &kp BSPC
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &trans     &kp FSLH   &kp N4       &kp N5  &kp N6  &kp MINUS
-&kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12         &trans     &kp TAB    &kp N1       &kp N2  &kp N3  &kp PLUS
-                                                                                                          &bootloader  &trans
-                                        &trans        &kp N0        &kp DOT         &kp ENTER  &trans     &trans
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mkp LCLK  &mkp RCLK  &kp N7       &kp N8  &kp N9  &kp BSPC
+&bt BT_CLR_ALL  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &trans     &kp FSLH   &kp N4       &kp N5  &kp N6  &kp MINUS
+&kp F7          &kp F8        &kp F9        &kp F10       &kp F11       &kp F12         &trans     &kp TAB    &kp N1       &kp N2  &kp N3  &kp PLUS
+                                                                                                              &bootloader  &trans
+                                            &trans        &kp N0        &kp DOT         &kp ENTER  &trans     &trans
             >;
         };
 
@@ -42,6 +51,16 @@
 &trans        &trans          &trans  &trans  &trans  &trans    &trans       &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
                                                                                        &trans    &trans
                                       &trans  &trans  &trans    &bootloader  &trans    &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                                                  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
