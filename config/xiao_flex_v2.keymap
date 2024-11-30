@@ -61,11 +61,11 @@
 
         layer_2 {
             bindings = <
-&kp LEFT_ALT  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp NON_US_HASH  &kp DOLLAR  &kp PERCENT    &kp AMPERSAND   &kp KP_DIVIDE  &kp KP_LEFT_PARENTHESIS  &kp RPAR           &kp EQUAL             &kp DELETE
-&kp RCTRL     &kp LBKT         &kp RBKT           &trans           &trans      &trans         &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp GRAVE
-&kp LEFT_WIN  &trans           &trans             &trans           &trans      &trans         &kp UNDERSCORE  &trans         &kp LEFT_BRACE           &kp RIGHT_BRACE    &kp PIPE              &kp TILDE
-                                                                                                                             &kp C_AC_ZOOM_IN         &kp C_AC_ZOOM_OUT
-                                                  &trans           &trans      &trans         &bootloader     &trans         &trans
+&kp LEFT_ALT  &kp EXCLAMATION  &kp LS(SINGLE_QUOTE)  &kp NON_US_HASH  &kp DOLLAR  &kp PERCENT    &kp LS(AMPERSAND)  &kp KP_DIVIDE  &kp LS(KP_LEFT_PARENTHESIS)  &kp RPAR           &kp EQUAL             &kp DELETE
+&kp RCTRL     &kp LBKT         &kp RBKT              &trans           &trans      &trans         &kp MINUS          &kp EQUAL      &kp LEFT_BRACKET             &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp GRAVE
+&kp LEFT_WIN  &trans           &trans                &trans           &trans      &trans         &kp UNDERSCORE     &trans         &kp LEFT_BRACE               &kp RIGHT_BRACE    &kp PIPE              &kp TILDE
+                                                                                                                                   &kp C_AC_ZOOM_IN             &kp C_AC_ZOOM_OUT
+                                                     &trans           &trans      &trans         &bootloader        &trans         &trans
             >;
         };
 
